@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+ul {
+  list-style-type: none;
+}
+.header {
+  background-image: url(image/macbook_mouse.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+  background-attachment: fixed;
+  opacity: 0.8;
+  padding-top: 1.2rem;
+}
+.menu-icon {
+  display: none;
+  color: white;
+}
+
+.align-center {
+  text-align: center;
+}
+.horizontal-list li {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 0.9rem;
+}
+
+.horizontal-list li a {
+  text-decoration: none;
+  color: white;
+}
+
+.underline-transaction li a {
+  transition: color 0.5s, border-bottom 4s;
+}
+
+.underline-transaction li a:hover {
+  color: lightgray;
+  border-bottom: 1px solid black;
+}
+
+.profile-container {
+  margin-top: 13vh;
+  text-align: center;
+}
+.profile-name {
+  color: white;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-icon li a i {
+  font-size: 1.3rem;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.social-icon li a i:hover {
+  box-shadow: 0 0 6px 4px rgba(230, 196, 196, 0.2);
+}
+
+#about {
+  height: auto;
+  position: relative;
+}
+
+.image-round {
+  width: 12rem;
+  height: 12rem;
+  margin: auto;
+  margin-top: -17vh;
+  margin-bottom: 3rem;
+}
+
+.image-round img {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px 2px lightgray;
+}
+#about p {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  color: grey;
+}
+
+#skills {
+  background-color: #f0f0f0;
+  margin-top: 4rem;
+}
+.skill-display {
+  padding-bottom: 4rem;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill-container {
+  width: 12rem;
+  border-radius: 20px;
+  background-color: lightgray;
+  overflow: hidden;
+  color: white;
+  margin-bottom: 2rem;
+}
+.eightyfive-perc {
+  width: 85%;
+  background-color: #2857a4;
+  padding: 0.6rem;
+}
+.eighty-perc {
+  width: 80%;
+  background-color: #ec7c0c;
+  padding: 0.6rem;
+}
+
+.seventyfive-perc {
+  width: 75%;
+  background-color: #158972;
+  padding: 0.6rem;
+}
+.seventy-perc {
+  width: 70%;
+  background-color: #8c0e98;
+  padding: 0.6rem;
+}
+.sixtyfive-perc {
+  width: 65%;
+  background-color: #a10303;
+  padding: 0.6rem;
+}
+.sixty-perc {
+  width: 60%;
+  background-color: #bd0795;
+  padding: 0.6rem;
+}
+.section-heading {
+  font-size: 3rem;
+  color: #2857a4;
+  text-align: center;
+  padding: 4rem 0;
+  font-weight: 400;
+}
+.section-heading span {
+  margin-right: 0.5rem;
+}
+
+.card-container {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  position: relative;
+}
+.timeline {
+  height: 62%;
+  width: 0;
+  border: 1px dashed #0096fa6b;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+.timeline-icon {
+  font-size: 2rem;
+  color: #2857a4;
+  transform: rotate(135deg);
+  position: sticky;
+  top: 25%;
+  margin-top: -27px;
+  margin-left: 8px;
+  z-index: 2;
+}
+
+.card-container .card {
+  width: 50%;
+  padding: 2rem;
+  position: relative;
+}
+.card-container .card:nth-child(2n + 1)::after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: lightgray;
+  border-radius: 50%;
+  position: absolute;
+  right: -8px;
+  top: 30%;
+  z-index: 1;
+}
+.card-container .card:nth-child(2n)::after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: lightgray;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: 30%;
+  z-index: 1;
+}
+.card-container .card .heading-part {
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+  padding-bottom: 1rem;
+}
+.card-container .card .heading-part img {
+  width: 3rem;
+}
+.card-container .card .heading-part h3 {
+  font-size: 1.5rem;
+  color: #2857a4;
+}
+.card-container .card .heading-part h4 {
+  font-size: 1.2rem;
+  color: #ffe627;
+}
+.card-container .card .heading-part p {
+  font-size: 1rem;
+  color: grey;
+}
+.card-container .card p {
+  font-size: 0.9rem;
+  color: grey;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.card-container .card:nth-child(2n) {
+  align-self: flex-end;
+}
+#education {
+  background-color: #f0f0f0;
+}
+
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.project-row .project {
+  width: 21rem;
+  height: 18rem;
+  margin-bottom: 2rem;
+}
+.project-row .project:hover {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  filter: brightness(0.9);
+}
+.project-row .project img {
+  width: 100%;
+  height: 100%;
+}
+
+#contact {
+  background-color: #2857a4;
+  padding-bottom: 4rem;
+}
+#contact h2 {
+  color: white !important;
+}
+.contact-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.form {
+  flex: 1;
+  padding: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white !important ;
+  color: lightgray;
+  font-size: 1rem;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.form .btn {
+  width: 50%;
+  margin: 1rem auto;
+}
+.form .btn button {
+  padding: 0.5rem;
+  width: 100%;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 1.1rem;
+}
+.contact-container .address {
+  flex: 1;
+  padding: 1rem;
+  color: white;
+}
+.contact-container .address h3 {
+  margin: 1rem 0;
+}
+.contact-container .address p {
+  font-size: 0.9rem;
+}
+.contact-container .address ul li {
+  padding-bottom: 0.8rem;
+}
+.contact-container .address ul li span {
+  padding-right: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .hidden {
+    display: none;
+  }
+  .header {
+    background-size: contain;
+    height: 30vh;
+  }
+  .menu-icon {
+    display: block;
+    text-align: end;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .profile-container {
+    margin-top: 0;
+  }
+  .profile-name {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+  }
+  .image-round {
+    width: 8rem;
+    height: 8rem;
+    margin-top: -8vh;
+  }
+  .card-container .card {
+    width: 100%;
+  }
+  .timeline {
+    left: 0;
+  }
+  .card-container .card:nth-child(2n + 1)::after {
+    left: -8px;
+  }
+  .contact-container {
+    display: block;
+  }
+  .form .btn button {
+    font-size: 0.9rem;
+  }
+}
